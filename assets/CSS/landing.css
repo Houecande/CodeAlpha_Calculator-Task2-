@@ -54,7 +54,7 @@ body {
 nav {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 28px 0;
 }
 
