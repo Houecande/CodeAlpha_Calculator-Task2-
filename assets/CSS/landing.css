@@ -62,16 +62,25 @@ nav {
   display: flex;
   align-items: center;
   gap: 10px;
-  font-size: 14px;
-  font-weight: 500;
-  color: var(--text);
+}
+
+.nav-brand .brand-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  background: linear-gradient(135deg, #ffffff 40%, var(--violet-mid) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  filter: drop-shadow(0 2px 8px rgba(139, 124, 248, 0.25));
 }
 
 .nav-brand .dot {
   width: 8px; height: 8px;
   border-radius: 50%;
   background: var(--violet);
-  box-shadow: 0 0 12px var(--violet);
+  box-shadow: 0 0 14px var(--violet), 0 0 4px rgba(255, 255, 255, 0.6);
 }
 
 /* ── HERO ── */

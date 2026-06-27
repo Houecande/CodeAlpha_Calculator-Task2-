@@ -1,8 +1,3 @@
-/* ============================================================
-   Glassmorphism Calculator — main.js
-   CodeAlpha Frontend Development Internship — Task 2
-   ============================================================ */
-
 /* ── STATE ── */
 let cur = '0';
 let prev = '';

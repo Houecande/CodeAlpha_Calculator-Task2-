@@ -1,10 +1,3 @@
-/* ============================================================
-   Non-interactive automatic demo.
-   Simulates key presses to show the calculator
-   producing correct results, in a continuous loop.
-   .demo-btns has pointer-events:none -> no clicks possible.
-   Only a visual hover remains active on the card (#calc-demo:hover).
-   ============================================================ */
 
 const demoDisp = document.getElementById('demo-disp');
 const demoExpr = document.getElementById('demo-expr');
