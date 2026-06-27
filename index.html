@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Calculator</title>
-  <meta name="description" content="Calculatrice glassmorphism" />
+  <meta name="description" content="Glassmorphism calculator" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
@@ -12,7 +12,7 @@
 </head>
 <body>
 
-  <a class="back-link" href="landing_page.html">&larr; Retour à la présentation</a>
+  <a class="back-link" href="landing_page.html">&larr; Back to landing page</a>
 
   <div class="orb orb1" aria-hidden="true"></div>
   <div class="orb orb2" aria-hidden="true"></div>
@@ -25,33 +25,33 @@
       <div class="disp-main" id="disp">0</div>
     </div>
 
-    <div class="btns" role="group" aria-label="Touches de la calculatrice">
-      <button class="btn btn-clear" data-action="clear" aria-label="Tout effacer">AC</button>
-      <button class="btn btn-fn"    data-action="sign"  aria-label="Changer de signe">+/&minus;</button>
-      <button class="btn btn-fn"    data-action="pct"   aria-label="Pourcentage">%</button>
-      <button class="btn btn-op"    data-op="/"         aria-label="Diviser">&divide;</button>
+    <div class="btns" role="group" aria-label="Calculator keys">
+      <button class="btn btn-clear" data-action="clear" aria-label="Clear all">AC</button>
+      <button class="btn btn-fn"    data-action="sign"  aria-label="Change sign">+/&minus;</button>
+      <button class="btn btn-fn"    data-action="pct"   aria-label="Percentage">%</button>
+      <button class="btn btn-op"    data-op="/"         aria-label="Divide">&divide;</button>
 
       <button class="btn btn-num" data-num="7">7</button>
       <button class="btn btn-num" data-num="8">8</button>
       <button class="btn btn-num" data-num="9">9</button>
-      <button class="btn btn-op"  data-op="*" aria-label="Multiplier">&times;</button>
+      <button class="btn btn-op"  data-op="*" aria-label="Multiply">&times;</button>
 
       <button class="btn btn-num" data-num="4">4</button>
       <button class="btn btn-num" data-num="5">5</button>
       <button class="btn btn-num" data-num="6">6</button>
-      <button class="btn btn-op"  data-op="-" aria-label="Soustraire">&minus;</button>
+      <button class="btn btn-op"  data-op="-" aria-label="Subtract">&minus;</button>
 
       <button class="btn btn-num" data-num="1">1</button>
       <button class="btn btn-num" data-num="2">2</button>
       <button class="btn btn-num" data-num="3">3</button>
-      <button class="btn btn-op"  data-op="+" aria-label="Additionner">+</button>
+      <button class="btn btn-op"  data-op="+" aria-label="Add">+</button>
 
       <button class="btn btn-num btn-zero" data-num="0">0</button>
       <button class="btn btn-num" data-num=".">.</button>
-      <button class="btn btn-eq"  data-action="eq" aria-label="Calculer le résultat">=</button>
+      <button class="btn btn-eq"  data-action="eq" aria-label="Calculate result">=</button>
     </div>
 
-    <p class="kbd-hint">Clavier supporté · Échap = AC</p>
+    <p class="kbd-hint">Keyboard supported · Esc = AC</p>
   </div>
 
   <script src="assets/js/main.js"></script>

@@ -25,7 +25,7 @@ function setDisp(val) {
 }
 
 function fmt(n) {
-  if (isNaN(n) || !isFinite(n)) return 'Erreur';
+  if (isNaN(n) || !isFinite(n)) return 'Error';
   const rounded = parseFloat(n.toPrecision(12));
   return String(rounded);
 }
@@ -37,7 +37,7 @@ function inputNum(d) {
     justEvaled = false;
     exprEl.textContent = '';
   }
-  if (cur === 'Erreur') cur = '0';
+  if (cur === 'Error') cur = '0';
   if (d === '.' && cur.includes('.')) return;
   if (cur === '0' && d !== '.') cur = d;
   else cur = cur.length < 14 ? cur + d : cur;
@@ -45,7 +45,7 @@ function inputNum(d) {
 }
 
 function inputOp(o) {
-  if (cur === 'Erreur') return;
+  if (cur === 'Error') return;
   justEvaled = false;
   if (op && prev !== '') compute(false);
   prev = cur;
@@ -90,13 +90,13 @@ function clearAll() {
 }
 
 function backspace() {
-  if (cur === 'Erreur' || justEvaled) { clearAll(); return; }
+  if (cur === 'Error' || justEvaled) { clearAll(); return; }
   cur = cur.length > 1 ? cur.slice(0, -1) : '0';
   setDisp(cur);
 }
 
 function toggleSign() {
-  if (cur === '0' || cur === 'Erreur') return;
+  if (cur === '0' || cur === 'Error') return;
   cur = cur.startsWith('-') ? cur.slice(1) : '-' + cur;
   setDisp(cur);
 }
